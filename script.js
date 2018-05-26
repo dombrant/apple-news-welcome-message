@@ -1,7 +1,7 @@
-function addClasses(){
-  $(".header").addClass("slideUp");
-  $(".paragraph").addClass("slideUp");
-}
+const addClasses = () => {
+  document.querySelector('.header').classList.add('slideUp');
+  document.querySelector('.paragraph').classList.add('slideUp');
+};
 /*
   Adds the slideUp animation to the header
   and paragraph based on the CSS class
@@ -10,11 +10,32 @@ function addClasses(){
   will run properly
 */
 
-function changeMargin() {
-  $(".slideUp").bind('oanimationend animationend webkitAnimationEnd', function() {
-    $("h1").css("margin-top", "50px");
+const whichAnimationEvent = () => {
+  const fakeElement = document.createElement('fakeElement');
+  const animations = {
+    animation: 'animationend',
+    OAnimation: 'oAnimationEnd',
+    MozAnimation: 'animationend',
+    WebkitAnimation: 'webkitAnimationEnd'
+  };
+
+  for (let a in animations) {
+    if (fakeElement.style[a] !== undefined) {
+      return animations[a];
+    }
+  }
+};
+
+const animationEnd = whichAnimationEvent();
+// Above code from https://davidwalsh.name/css-animation-callback
+
+const makeButtonsVisible = () => {
+  document.querySelector('.slideUp').addEventListener(animationEnd, () => {
+    document.querySelector('h1').style.marginTop = '50px';
+    document.querySelector('.btn').style.visibility = 'visible';
+    document.querySelector('.btn').classList.add('fadeIn');
   });
-}
+};
 /*
   A callback for the slideUp animation
   Sets the margin-top of the header
@@ -22,20 +43,16 @@ function changeMargin() {
   slideUp animation ends
  */
 
-function makeButtonVisible(){
-  $(".slideUp").bind('oanimationend animationend webkitAnimationEnd', function() {
-    $(".btn").css("visibility", "visible");
-    $(".btn").addClass("fadeIn");
-  });
-}
+const makeButtonVisible = () => {
+  document.querySelector('.slideUp').addEventListener(animationEnd, () => {});
+};
 /*
   Makes the buttons visible
   Also applies the fadeIn animation
  */
 
 setTimeout(addClasses, 2200);
-setTimeout(changeMargin, 2200);
-setTimeout(makeButtonVisible, 2300);
+setTimeout(makeButtonsVisible, 2200);
 /*
   Timers for each function
   The addClass function is delayed because
