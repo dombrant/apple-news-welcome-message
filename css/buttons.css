@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-button {
+.button-container > button {
   height: 75px;
   width: 150px;
   font-size: 18px;
@@ -13,27 +13,27 @@ button {
   transition: all 0.5s ease;
 }
 
-.button-sign-up {
+.sign-up-button {
   color: #ffffff;
   background-color: #333333;
   border: thin solid #333333;
   margin-right: 6px;
 }
 
-.button-sign-up:hover {
+.sign-up-button:hover {
   color: #333333;
   background-color: #ffffff;
   transform: scale(1.1);
 }
 
-.button-log-in {
+.log-in-button {
   color: #333333;
   background-color: #ffffff;
   border: thin solid #333333;
   margin-left: 6px;
 }
 
-.button-log-in:hover {
+.log-in-button:hover {
   color: #ffffff;
   background-color: #333333;
   transform: scale(1.1);
