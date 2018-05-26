@@ -1,12 +1,6 @@
 .button-container {
   visibility: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
   justify-content: center;
 }
 
@@ -16,7 +10,6 @@ button {
   font-size: 18px;
   text-transform: uppercase;
   padding: 16px;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -30,7 +23,6 @@ button {
 .btnSignUp:hover {
   color: #333333;
   background-color: #ffffff;
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -44,6 +36,5 @@ button {
 .btnLogin:hover {
   color: #ffffff;
   background-color: #333333;
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
