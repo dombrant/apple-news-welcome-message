@@ -1,4 +1,4 @@
-@keyframes blurGrowIn {
+@keyframes blur-grow-in {
   0% {
     color: transparent;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -47,13 +47,13 @@
   }
 }
 
-@keyframes slideUp {
+@keyframes slide-upp {
   100% {
     transform: translateY(-100px);
   }
 }
 
-@keyframes fadeIn {
+@keyframes fade-in {
   0% {
     opacity: 0;
   }
@@ -63,19 +63,19 @@
   }
 }
 
-.blurGrowIn {
-  animation-name: blurGrowIn;
+.blur-grow-in {
+  animation-name: blur-grow-in;
   animation-timing-function: ease-out;
   animation-duration: 0.8s;
   animation-iteration-count: 1;
 }
 
-.slideUp {
-  animation-name: slideUp;
+.slide-up {
+  animation-name: slide-upp;
   animation-duration: 2s;
 }
 
-.fadeIn {
-  animation-name: fadeIn;
+.fade-in {
+  animation-name: fade-in;
   animation-duration: 1s;
 }

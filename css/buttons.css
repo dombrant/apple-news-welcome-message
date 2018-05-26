@@ -13,27 +13,27 @@ button {
   transition: all 0.5s ease;
 }
 
-.btnSignUp {
+.button-sign-up {
   color: #ffffff;
   background-color: #333333;
   border: thin solid #333333;
   margin-right: 6px;
 }
 
-.btnSignUp:hover {
+.button-sign-up:hover {
   color: #333333;
   background-color: #ffffff;
   transform: scale(1.1);
 }
 
-.btnLogin {
+.button-log-in {
   color: #333333;
   background-color: #ffffff;
   border: thin solid #333333;
   margin-left: 6px;
 }
 
-.btnLogin:hover {
+.button-log-in:hover {
   color: #ffffff;
   background-color: #333333;
   transform: scale(1.1);

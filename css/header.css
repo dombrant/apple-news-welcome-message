@@ -9,7 +9,7 @@ p {
   font-size: 20px;
 }
 
-.paragraph {
+.paragraph-container {
   max-width: 400px;
   margin-top: 0;
 }

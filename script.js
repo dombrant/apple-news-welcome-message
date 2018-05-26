@@ -1,9 +1,9 @@
 const addClasses = () => {
-  document.querySelector('.header').classList.add('slideUp');
-  document.querySelector('.paragraph').classList.add('slideUp');
+  document.querySelector('.header').classList.add('slide-up');
+  document.querySelector('.paragraph-container').classList.add('slide-up');
 };
 /*
-  Adds the slideUp animation to the header
+  Adds the slide-up animation to the header
   and paragraph based on the CSS class
   This is used instead of delaying the animation
   So that the changMargin function below
@@ -30,25 +30,25 @@ const animationEnd = whichAnimationEvent();
 // Above code from https://davidwalsh.name/css-animation-callback
 
 const makeButtonsVisible = () => {
-  document.querySelector('.slideUp').addEventListener(animationEnd, () => {
+  document.querySelector('.slide-up').addEventListener(animationEnd, () => {
     document.querySelector('h1').style.marginTop = '50px';
     document.querySelector('.button-container').style.visibility = 'visible';
-    document.querySelector('.button-container').classList.add('fadeIn');
+    document.querySelector('.button-container').classList.add('fade-in');
   });
 };
 /*
-  A callback for the slideUp animation
+  A callback for the slide-up animation
   Sets the margin-top of the header
   so it doesn't slide back down after the
-  slideUp animation ends
+  slide-up animation ends
  */
 
 const makeButtonVisible = () => {
-  document.querySelector('.slideUp').addEventListener(animationEnd, () => {});
+  document.querySelector('.slide-up').addEventListener(animationEnd, () => {});
 };
 /*
   Makes the buttons visible
-  Also applies the fadeIn animation
+  Also applies the fade-in animation
  */
 
 setTimeout(addClasses, 2200);
@@ -58,8 +58,8 @@ setTimeout(makeButtonsVisible, 2200);
   The addClass function is delayed because
   otherwise the animation callback
   in changeMargin() would listen for the
-  blurGrowIn animation to complete and not
-  the slideUp one
+  GrowIn animation to complete and not
+  the slide-up one
   The buttons are made visible 0.1s after the
-  slideUp animation is complete
+  slide-up animation is complete
  */
