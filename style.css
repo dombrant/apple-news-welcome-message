@@ -1,0 +1,253 @@
+/*
+ * CSS Reset
+ */
+html {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+/*
+ * End CSS Reset
+ */
+
+@-webkit-keyframes blurGrowIn {
+  0% {
+    color: transparent;
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  10%{
+    color: transparent;
+    text-shadow: 0 0 18px rgba(0,0,0,0.5);
+    -webkit-transform: scale(0.77);
+            transform: scale(0.77);
+  }
+  20% {
+    color: transparent;
+    text-shadow: 0 0 15px black;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  30%{
+    color: transparent;
+    text-shadow: 0 0 12px black;
+    -webkit-transform: scale(0.82);
+            transform: scale(0.82);
+  }
+  40% {
+    color: transparent;
+    text-shadow: 0 0 10px black;
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+  50% {
+    color: transparent;
+    text-shadow: 0 0 8px black;
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+  }
+  60%{
+    color: transparent;
+    text-shadow: 0 0 5px black;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    color: black;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes blurGrowIn {
+  0% {
+    color: transparent;
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  10%{
+    color: transparent;
+    text-shadow: 0 0 18px rgba(0,0,0,0.5);
+    -webkit-transform: scale(0.77);
+            transform: scale(0.77);
+  }
+  20% {
+    color: transparent;
+    text-shadow: 0 0 15px black;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  30%{
+    color: transparent;
+    text-shadow: 0 0 12px black;
+    -webkit-transform: scale(0.82);
+            transform: scale(0.82);
+  }
+  40% {
+    color: transparent;
+    text-shadow: 0 0 10px black;
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+  50% {
+    color: transparent;
+    text-shadow: 0 0 8px black;
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+  }
+  60%{
+    color: transparent;
+    text-shadow: 0 0 5px black;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    color: black;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  100%{
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@keyframes slideUp {
+  100%{
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.blurGrowIn {
+  -webkit-animation-name: blurGrowIn;
+          animation-name: blurGrowIn;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.slideUp {
+  -webkit-animation-name: slideUp;
+          animation-name: slideUp;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.fadeIn {
+  visibility: visible;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.container {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 150px;
+  margin-bottom: -12px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.paragraph {
+  max-width: 400px;
+  margin-top: 0;
+}
+
+.btn {
+  visibility: hidden;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+          flex-direction: row;
+          justify-content: center;
+}
+
+.btn * {
+  height: 25px;
+  min-width: 125px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.btnSignUp {
+  background-color: #333333;
+  color: #FFFFFF;
+  border: thin solid #333333;
+  margin-right: 6px;
+}
+
+.btnSignUp:hover {
+  background-color: #FFFFFF;
+  color: #333333;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.btnLogin {
+   color: #333333;
+   border: thin solid #333333;
+   margin-left: 6px;
+}
+
+.btnLogin:hover{
+  background-color: #333;
+  color: #fff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
