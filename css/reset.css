@@ -1,0 +1,19 @@
+/*
+ * CSS Reset
+ */
+html {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+/*
+ * End CSS Reset
+ */

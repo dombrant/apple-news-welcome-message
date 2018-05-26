@@ -1,0 +1,15 @@
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 150px;
+  margin-bottom: -12px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.paragraph {
+  max-width: 400px;
+  margin-top: 0;
+}

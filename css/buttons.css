@@ -1,0 +1,49 @@
+.button-container {
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button {
+  height: 75px;
+  width: 150px;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 16px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.btnSignUp {
+  color: #ffffff;
+  background-color: #333333;
+  border: thin solid #333333;
+  margin-right: 6px;
+}
+
+.btnSignUp:hover {
+  color: #333333;
+  background-color: #ffffff;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.btnLogin {
+  color: #333333;
+  background-color: #ffffff;
+  border: thin solid #333333;
+  margin-left: 6px;
+}
+
+.btnLogin:hover {
+  color: #ffffff;
+  background-color: #333333;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
