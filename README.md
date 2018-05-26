@@ -1,4 +1,4 @@
-# Apple News Welcome Message 1.0
+# Apple News Welcome Message
 
 ## Synopsis
 
