@@ -47,7 +47,7 @@
   }
 }
 
-@keyframes slide-upp {
+@keyframes slide-up {
   100% {
     transform: translateY(-100px);
   }
@@ -71,7 +71,7 @@
 }
 
 .slide-up {
-  animation-name: slide-upp;
+  animation-name: slide-up;
   animation-duration: 2s;
 }
 
