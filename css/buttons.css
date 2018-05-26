@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-.button-container > button {
+button {
   height: 75px;
   width: 150px;
   font-size: 18px;
@@ -26,15 +26,22 @@
   transform: scale(1.1);
 }
 
-.log-in-button {
+.log-in-button,
+.run-again-button {
   color: #333333;
   background-color: #ffffff;
   border: thin solid #333333;
   margin-left: 6px;
 }
 
-.log-in-button:hover {
+.log-in-button:hover,
+.run-again-button:hover {
   color: #ffffff;
   background-color: #333333;
   transform: scale(1.1);
+}
+
+.run-again-button {
+  visibility: hidden;
+  margin-top: 25px;
 }
