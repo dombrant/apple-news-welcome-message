@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-This is a demo of an onboarding screen for an app based on the iOS News app's onboarding screen, which consists of a blank screen that shows text un-blur and fade-in.
+This is a demo of an onboarding screen for an app based on the iOS News app's onboarding screen, which consists of a blank screen that shows text un-blur and fade-in. [Click here to see a live demo.](https://dombrant.github.io/apple-news-welcome-message/)
 
 ## Contributors
 
