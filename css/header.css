@@ -5,11 +5,11 @@ h1 {
   margin-bottom: -12px;
 }
 
-p {
-  font-size: 20px;
-}
-
 .paragraph-container {
   max-width: 400px;
   margin-top: 0;
+}
+
+p {
+  font-size: 20px;
 }
