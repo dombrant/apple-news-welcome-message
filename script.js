@@ -64,8 +64,10 @@ const showRunAgainButton = () => {
       }, 1000);
     });
 };
-// Fade in the run again button
-// Give it a delay of one second
+/*
+  Fade in the run again button
+  Give it a delay of one second
+ */
 
 setTimeout(() => {
   addClasses();
