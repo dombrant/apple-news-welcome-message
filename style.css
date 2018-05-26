@@ -21,122 +21,137 @@ a:visited {
 @-webkit-keyframes blurGrowIn {
   0% {
     color: transparent;
-    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(0.75);
-            transform: scale(0.75);
+    transform: scale(0.75);
   }
-  10%{
+
+  10% {
     color: transparent;
-    text-shadow: 0 0 18px rgba(0,0,0,0.5);
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(0.77);
-            transform: scale(0.77);
+    transform: scale(0.77);
   }
+
   20% {
     color: transparent;
     text-shadow: 0 0 15px black;
     -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    transform: scale(0.8);
   }
-  30%{
+
+  30% {
     color: transparent;
     text-shadow: 0 0 12px black;
     -webkit-transform: scale(0.82);
-            transform: scale(0.82);
+    transform: scale(0.82);
   }
+
   40% {
     color: transparent;
     text-shadow: 0 0 10px black;
     -webkit-transform: scale(0.85);
-            transform: scale(0.85);
+    transform: scale(0.85);
   }
+
   50% {
     color: transparent;
     text-shadow: 0 0 8px black;
     -webkit-transform: scale(0.87);
-            transform: scale(0.87);
+    transform: scale(0.87);
   }
-  60%{
+
+  60% {
     color: transparent;
     text-shadow: 0 0 5px black;
     -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    transform: scale(0.9);
   }
+
   100% {
     color: black;
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes blurGrowIn {
   0% {
     color: transparent;
-    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(0.75);
-            transform: scale(0.75);
+    transform: scale(0.75);
   }
-  10%{
+
+  10% {
     color: transparent;
-    text-shadow: 0 0 18px rgba(0,0,0,0.5);
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(0.77);
-            transform: scale(0.77);
+    transform: scale(0.77);
   }
+
   20% {
     color: transparent;
     text-shadow: 0 0 15px black;
     -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    transform: scale(0.8);
   }
-  30%{
+
+  30% {
     color: transparent;
     text-shadow: 0 0 12px black;
     -webkit-transform: scale(0.82);
-            transform: scale(0.82);
+    transform: scale(0.82);
   }
+
   40% {
     color: transparent;
     text-shadow: 0 0 10px black;
     -webkit-transform: scale(0.85);
-            transform: scale(0.85);
+    transform: scale(0.85);
   }
+
   50% {
     color: transparent;
     text-shadow: 0 0 8px black;
     -webkit-transform: scale(0.87);
-            transform: scale(0.87);
+    transform: scale(0.87);
   }
-  60%{
+
+  60% {
     color: transparent;
     text-shadow: 0 0 5px black;
     -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    transform: scale(0.9);
   }
+
   100% {
     color: black;
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @-webkit-keyframes slideUp {
-  100%{
+  100% {
     -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    transform: translateY(-100px);
   }
 }
 
 @keyframes slideUp {
-  100%{
+  100% {
     -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    transform: translateY(-100px);
   }
 }
 
 @-webkit-keyframes fadeIn {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+
+  100% {
     opacity: 1;
   }
 }
@@ -153,28 +168,27 @@ a:visited {
 
 .blurGrowIn {
   -webkit-animation-name: blurGrowIn;
-          animation-name: blurGrowIn;
+  animation-name: blurGrowIn;
   -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
+  animation-duration: 0.8s;
   -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 .slideUp {
   -webkit-animation-name: slideUp;
-          animation-name: slideUp;
+  animation-name: slideUp;
   -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 .fadeIn {
-  visibility: visible;
   -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
+  animation-name: fadeIn;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
 }
 
 .container {
@@ -214,8 +228,8 @@ p {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-          flex-direction: row;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .btn * {
@@ -227,27 +241,27 @@ p {
 
 .btnSignUp {
   background-color: #333333;
-  color: #FFFFFF;
+  color: #ffffff;
   border: thin solid #333333;
   margin-right: 6px;
 }
 
 .btnSignUp:hover {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #333333;
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .btnLogin {
-   color: #333333;
-   border: thin solid #333333;
-   margin-left: 6px;
+  color: #333333;
+  border: thin solid #333333;
+  margin-left: 6px;
 }
 
-.btnLogin:hover{
-  background-color: #333;
-  color: #fff;
+.btnLogin:hover {
+  background-color: #333333;
+  color: #ffffff;
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
