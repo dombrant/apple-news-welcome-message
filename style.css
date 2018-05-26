@@ -217,11 +217,8 @@ p {
   margin-top: 0;
 }
 
-.btn {
+.button-container {
   visibility: hidden;
-  font-size: 18px;
-  text-transform: uppercase;
-  padding: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,36 +229,40 @@ p {
   justify-content: center;
 }
 
-.btn * {
-  height: 25px;
-  min-width: 125px;
+button {
+  height: 75px;
+  width: 150px;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 16px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .btnSignUp {
-  background-color: #333333;
   color: #ffffff;
+  background-color: #333333;
   border: thin solid #333333;
   margin-right: 6px;
 }
 
 .btnSignUp:hover {
-  background-color: #ffffff;
   color: #333333;
+  background-color: #ffffff;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
 .btnLogin {
   color: #333333;
+  background-color: #ffffff;
   border: thin solid #333333;
   margin-left: 6px;
 }
 
 .btnLogin:hover {
-  background-color: #333333;
   color: #ffffff;
+  background-color: #333333;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }

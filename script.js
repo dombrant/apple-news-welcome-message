@@ -32,8 +32,8 @@ const animationEnd = whichAnimationEvent();
 const makeButtonsVisible = () => {
   document.querySelector('.slideUp').addEventListener(animationEnd, () => {
     document.querySelector('h1').style.marginTop = '50px';
-    document.querySelector('.btn').style.visibility = 'visible';
-    document.querySelector('.btn').classList.add('fadeIn');
+    document.querySelector('.button-container').style.visibility = 'visible';
+    document.querySelector('.button-container').classList.add('fadeIn');
   });
 };
 /*
