@@ -67,9 +67,11 @@ const showRunAgainButton = () => {
 // Fade in the run again button
 // Give it a delay of one second
 
-setTimeout(addClasses, 2200);
-setTimeout(makeButtonsVisible, 2200);
-setTimeout(showRunAgainButton, 2200);
+setTimeout(() => {
+  addClasses();
+  makeButtonsVisible();
+  showRunAgainButton();
+}, 2200);
 /*
   Timers for each function
   The addClass function is delayed because
