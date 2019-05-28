@@ -1,6 +1,6 @@
 const addClasses = () => {
-  document.querySelector('.header').classList.add('slide-up');
-  document.querySelector('.paragraph-container').classList.add('slide-up');
+  document.querySelector(".header").classList.add("slide-up");
+  document.querySelector(".paragraph-container").classList.add("slide-up");
 };
 /*
   Adds the slide-up animation to the header
@@ -11,12 +11,12 @@ const addClasses = () => {
 */
 
 const whichAnimationEvent = () => {
-  const fakeElement = document.createElement('fakeElement');
+  const fakeElement = document.createElement("fakeElement");
   const animations = {
-    animation: 'animationend',
-    OAnimation: 'oAnimationEnd',
-    MozAnimation: 'animationend',
-    WebkitAnimation: 'webkitAnimationEnd'
+    animation: "animationend",
+    OAnimation: "oAnimationEnd",
+    MozAnimation: "animationend",
+    WebkitAnimation: "webkitAnimationEnd"
   };
 
   for (let a in animations) {
@@ -30,16 +30,16 @@ const animationEnd = whichAnimationEvent();
 // Above code from https://davidwalsh.name/css-animation-callback
 
 const fadeInElement = element => {
-  document.querySelector(element).style.visibility = 'visible';
-  document.querySelector(element).classList.add('fade-in');
+  document.querySelector(element).style.visibility = "visible";
+  document.querySelector(element).classList.add("fade-in");
 };
 // Function to change the visibility and add the fade-in class to a specified element
 // To be used in makeButtonVisible() and showRunAgainButton()
 
 const makeButtonsVisible = () => {
-  document.querySelector('.slide-up').addEventListener(animationEnd, () => {
-    document.querySelector('h1').style.marginTop = '50px';
-    fadeInElement('.button-container');
+  document.querySelector(".slide-up").addEventListener(animationEnd, () => {
+    document.querySelector("h1").style.marginTop = "50px";
+    fadeInElement(".button-container");
   });
 };
 /*
@@ -51,16 +51,16 @@ const makeButtonsVisible = () => {
   and applies the fade-in animation to them
  */
 
-document.querySelector('.run-again-button').addEventListener('click', () => {
+document.querySelector(".run-again-button").addEventListener("click", () => {
   window.location.reload(true);
 });
 
 const showRunAgainButton = () => {
   document
-    .querySelector('.button-container')
+    .querySelector(".button-container")
     .addEventListener(animationEnd, () => {
       setTimeout(() => {
-        fadeInElement('.run-again-button');
+        fadeInElement(".run-again-button");
       }, 1000);
     });
 };
