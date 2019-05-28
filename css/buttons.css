@@ -14,7 +14,7 @@ button {
 }
 
 button:hover {
-  cursor: grab;
+  cursor: pointer;
 }
 
 .sign-up-button {
