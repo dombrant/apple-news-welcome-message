@@ -6,7 +6,7 @@ const addClasses = () => {
   Adds the slide-up animation to the header
   and paragraph based on the CSS class
   This is used instead of delaying the animation
-  So that the changMargin function below
+  So that the changeMargin function below
   will run properly
 */
 
@@ -16,7 +16,7 @@ const whichAnimationEvent = () => {
     animation: "animationend",
     OAnimation: "oAnimationEnd",
     MozAnimation: "animationend",
-    WebkitAnimation: "webkitAnimationEnd"
+    WebkitAnimation: "webkitAnimationEnd",
   };
 
   for (let a in animations) {
@@ -29,7 +29,7 @@ const whichAnimationEvent = () => {
 const animationEnd = whichAnimationEvent();
 // Above code from https://davidwalsh.name/css-animation-callback
 
-const fadeInElement = element => {
+const fadeInElement = (element) => {
   document.querySelector(element).style.visibility = "visible";
   document.querySelector(element).classList.add("fade-in");
 };
