@@ -1,0 +1,170 @@
+/* Animations */
+
+@keyframes blur-grow-in {
+  0% {
+    color: transparent;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform: scale(0.75);
+  }
+
+  10% {
+    color: transparent;
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.5);
+    transform: scale(0.77);
+  }
+
+  20% {
+    color: transparent;
+    text-shadow: 0 0 15px black;
+    transform: scale(0.8);
+  }
+
+  30% {
+    color: transparent;
+    text-shadow: 0 0 12px black;
+    transform: scale(0.82);
+  }
+
+  40% {
+    color: transparent;
+    text-shadow: 0 0 10px black;
+    transform: scale(0.85);
+  }
+
+  50% {
+    color: transparent;
+    text-shadow: 0 0 8px black;
+    transform: scale(0.87);
+  }
+
+  60% {
+    color: transparent;
+    text-shadow: 0 0 5px black;
+    transform: scale(0.9);
+  }
+
+  100% {
+    color: black;
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-up {
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.paragraph-container {
+  max-width: 400px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+.container {
+  margin-top: 20vw;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-container {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  height: 75px;
+  width: 150px;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 16px;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.sign-up-button {
+  color: #ffffff;
+  background-color: #333333;
+  border: thin solid #333333;
+  margin-right: 6px;
+}
+
+.sign-up-button:hover {
+  color: #333333;
+  background-color: #ffffff;
+  transform: scale(1.1);
+}
+
+.log-in-button,
+.run-again-button {
+  color: #333333;
+  background-color: #ffffff;
+  border: thin solid #333333;
+  margin-left: 6px;
+}
+
+.log-in-button:hover,
+.run-again-button:hover {
+  color: #ffffff;
+  background-color: #333333;
+  transform: scale(1.1);
+}
+
+.run-again-button {
+  opacity: 0;
+  margin-top: 25px;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 5.5s;
+  animation-fill-mode: forwards;
+}
+
+.blur-grow-in {
+  animation-name: blur-grow-in;
+  animation-timing-function: ease-out;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+
+.slide-up {
+  animation-name: slide-up;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.fade-in {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-delay: 4s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
